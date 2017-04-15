@@ -582,9 +582,11 @@ a {
   background-color: transparent;
   border: 2px solid #D5D2D8;
   border-radius: 4px;
+  box-shadow: 10px 10px 10px rgba(23, 16, 33, 0.6);
 }
 .cta:hover {
   cursor: pointer;
+  box-shadow: 20px 20px 20px rgba(23, 16, 33, 0.5);
 }
 
 .nav-link {
@@ -606,7 +608,7 @@ a {
   margin-bottom: 22px;
   text-align: center;
   background-color: #171021;
-  background-image: linear-gradient(#171021, rgba(67, 35, 87, 0.4));
+  background-image: linear-gradient(to bottom, rgba(23, 16, 33, 0.4), rgba(67, 35, 87, 0.5)), radial-gradient(ellipse at 17% 47%, rgba(104, 78, 118, 0.4) -1%, rgba(41, 20, 57, 0.7) 64%);
   color: #B1A5B7;
 }
 .hero-container img {
@@ -633,6 +635,7 @@ a {
   padding: 30px;
   background-color: #f8f5fb;
   border-radius: 4px;
+  box-shadow: 10px 20px 30px rgba(177, 165, 183, 0.2);
 }
 .nav-card img {
   margin-bottom: 10px;
@@ -656,6 +659,7 @@ footer {
   background-color: #171021;
   font-size: 12px;
   color: #a79bad;
+  margin-top: 20px;
 }
 footer h4 {
   text-transform: uppercase;
@@ -828,12 +832,12 @@ header img {
 .book-intro a {
   display: inline-block;
   padding-bottom: 10px;
-  border-bottom: 2px solid #432357;
+  border-bottom: 2px solid #684E76;
   margin-top: 20px;
   font-size: 13px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.15em;
   font-family: 'Raleway', 'sans-serif';
-  color: #432357;
+  color: #684E76;
 }

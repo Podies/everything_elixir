@@ -68,8 +68,10 @@ a {
 	background-color: transparent;
 	border: 2px solid $primary-color-6;
 	border-radius: 4px;
+	box-shadow: 10px 10px 10px rgba($primary-color-1,0.6);
 	&:hover {
 		cursor: pointer;
+		box-shadow: 20px 20px 20px rgba($primary-color-1,0.5);
 	}
 }
 
