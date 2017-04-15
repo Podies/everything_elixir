@@ -38,6 +38,9 @@
 	}
 }
 
+//====================================================
+// Intro- Section
+//====================================================
 .nav-card {
 	text-align: center;
 	padding: 30px;
@@ -106,5 +109,171 @@ footer {
 		&:hover {
 			color: $primary-color-4;
 		}
+	}
+}
+
+//====================================================
+//Secondary Page Books and Videos
+//====================================================
+
+header {
+	img {
+		width: 40%;
+	}
+}
+
+.primary-nav {
+	text-align: right;
+	li {
+		display: inline;
+
+		a {
+			padding: 12px 20px;
+			color: $primary-color-5;
+			text-decoration: none;
+			font : {
+				family: 'Raleway', 'sans-serif';
+				size: 16px;
+				weight: 600;
+			}
+			&.active {
+				color: $primary-color-3;
+				border-bottom: 2px solid $primary-color-3;
+			}
+		}
+	}
+}
+
+.main-nav {
+	display: flex;
+	align-items: center;
+}
+
+.secondary-nav {
+	position: relative;
+
+	li {
+		display: inline;
+
+		a {
+			padding: 12px 20px;
+			text-transform: uppercase;
+			color: $primary-color-5;
+			letter-spacing: 0.18em;
+			font: {
+				weight: 400;
+			}
+			&.active {
+				background-color: $primary-color-6 + 30;
+				border-radius: 4px 4px 0 0;
+				border-bottom: 2px solid $primary-color-3;
+				color: $primary-color-3;
+				font-weight: 700;
+			}
+		}
+	}
+	&:after {
+		content: '';
+		width: 100%;
+		position: absolute;
+		height: 1px;
+		background-color: $primary-color-5;
+		left: 0;
+		bottom: -13px;
+		z-index: -1;
+	}
+}
+
+.sidebar {
+	background-color: $primary-color-6 +30;
+	border-radius: 4px;
+
+	h4 {
+		text-transform: uppercase;
+		color: $primary-color-6 - 20;
+		letter-spacing: 0.09em;
+		margin-bottom: 12px;
+	}
+}
+
+.sidebar-nav {
+
+	a {
+		color: $primary-color-4;
+		font-family: 'Quicksand', 'sans-serif';
+		display: block;
+		padding: 14px 0;
+		font : {
+			size: 16px;
+			weight: 400;
+		}
+		&.active {
+			color: $primary-color-3;
+			font-weight: 700;
+		}
+	}
+}
+
+.book-card {
+	position: relative;
+	margin-top: 20px;
+
+	&:after {
+		content: '';
+		position: absolute;
+		width: 94.6%;
+		left: 22px;
+		height: 1px;
+		background-color: $primary-color-6 + 10;
+		bottom: 1px;
+	}
+}
+
+.book-img {
+
+	img {
+		width: 100%;
+	}
+}
+
+.book-intro {
+	h3 {
+		font-size: 20px;
+		letter-spacing: 0.06em;
+		font-weight: 700;
+		color: $primary-color-4;
+		margin-bottom: 20px;
+	}
+
+	span {
+		text-transform: uppercase;
+		font-size: 10px;
+		letter-spacing: 0.1em;
+		padding: 6px 10px;
+		background-color: #219021;
+		color: white;
+		border-radius: 4px;
+		font-weight: 400;
+	}
+
+	.buy-book {
+		background-color: #ffc107;
+	}
+
+	p {
+		margin-top: 20px;
+	}
+
+	a {
+		display: inline-block;
+		padding-bottom: 10px;
+		border-bottom: 2px solid $primary-color-3;
+		margin-top: 20px;
+		font-size: 13px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.15em;
+		font-family: 'Raleway', 'sans-serif';
+		color: $primary-color-3;
 	}
 }
