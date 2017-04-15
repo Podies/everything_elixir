@@ -185,12 +185,15 @@ header {
 }
 
 .sidebar {
-	background-color: $primary-color-6 +30;
+	background-image: linear-gradient(to bottom, rgba($primary-color-3,0.4), rgba($primary-color-1,0.5)), 
+										radial-gradient(ellipse at 50% 20%, rgba($primary-color-4,0.4) -1%, rgba($primary-color-3,0.7) 120%);
 	border-radius: 4px;
+	box-shadow: 20px 30px 60px rgba($primary-color-4,0.2);
 
 	h4 {
+		font-size: 11px;
 		text-transform: uppercase;
-		color: $primary-color-6 - 20;
+		color: $primary-color-6 - 40;
 		letter-spacing: 0.09em;
 		margin-bottom: 12px;
 	}
@@ -199,17 +202,27 @@ header {
 .sidebar-nav {
 
 	a {
-		color: $primary-color-4;
+		color: $primary-color-6;
 		font-family: 'Quicksand', 'sans-serif';
 		display: block;
 		padding: 14px 0;
+		position: relative;
 		font : {
 			size: 16px;
 			weight: 400;
 		}
 		&.active {
-			color: $primary-color-3;
+			color: white;
 			font-weight: 700;
+			&:after {
+				content:'';
+				position: absolute;
+				width: 5px;
+				height: 100%;
+				background-color: white;
+				top: 0;
+				left: -21px;
+			}
 		}
 	}
 }
@@ -233,6 +246,7 @@ header {
 
 	img {
 		width: 100%;
+		box-shadow: 10px 20px 30px rgba($primary-color-4,0.1);
 	}
 }
 
