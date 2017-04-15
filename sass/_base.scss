@@ -88,3 +88,15 @@ a {
 		border-bottom: 2px solid $primary-color-1;
 	}
 }
+
+.clearfix {
+	*zoom: 1;
+	&:before,
+	&:after {
+		display: table;
+		content: '';
+	}
+	&:after {
+		clear: both;
+	}
+}
