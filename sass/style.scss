@@ -45,9 +45,9 @@
 .nav-card {
 	text-align: center;
 	padding: 30px;
-	background-color: $primary-color-6 + 35 ;
+	background-color: white ;
 	border-radius: 4px;
-	box-shadow: 10px 20px 30px rgba($primary-color-5,0.2);
+	box-shadow: 1px 1px 2px rgba($primary-color-4,0.1), 1px 1px 2px rgba($primary-color-4,0.1);
 
 	img{
 		margin-bottom: 10px;
@@ -135,7 +135,7 @@ header {
 
 		a {
 			padding: 12px 20px;
-			color: $primary-color-5;
+			color: $primary-color-4;
 			text-decoration: none;
 			font : {
 				family: 'Raleway', 'sans-serif';
@@ -143,7 +143,7 @@ header {
 				weight: 600;
 			}
 			&.active {
-				color: $primary-color-3;
+				color: $primary-color-2;
 				border-bottom: 2px solid $primary-color-3;
 			}
 		}
@@ -191,10 +191,6 @@ header {
 }
 
 .sidebar {
-	background-image: linear-gradient(to bottom, rgba($primary-color-3,0.4), rgba($primary-color-1,0.5)), 
-										radial-gradient(ellipse at 50% 20%, rgba($primary-color-4,0.4) -1%, rgba($primary-color-3,0.7) 120%);
-	border-radius: 4px;
-	box-shadow: 20px 30px 60px rgba($primary-color-4,0.2);
 
 	h4 {
 		font-size: 11px;
@@ -206,9 +202,8 @@ header {
 }
 
 .sidebar-nav {
-
 	a {
-		color: $primary-color-6;
+		color: $primary-color-4;
 		font-family: 'Quicksand', 'sans-serif';
 		display: block;
 		padding: 14px 0;
@@ -218,42 +213,30 @@ header {
 			weight: 400;
 		}
 		&.active {
-			color: white;
+			color: $primary-color-4;
 			font-weight: 700;
-			&:after {
-				content:'';
-				position: absolute;
-				width: 5px;
-				height: 100%;
-				background-color: white;
-				top: 0;
-				left: -21px;
-			}
+		}
+		&:hover {
+			color: $primary-color-1;
 		}
 	}
 }
 
 
 .book-card {
-	position: relative;
-	margin-top: 20px;
-
-	&:after {
-		content: '';
-		position: absolute;
-		width: 94.6%;
-		left: 22px;
-		height: 1px;
-		background-color: $primary-color-6 + 10;
-		bottom: 1px;
-	}
+	padding: 22px;
+	background-color: white;
+	border-radius: 4px;
+	box-shadow: 1px 1px 2px rgba($primary-color-4,0.1), 1px 1px 2px rgba($primary-color-4,0.1);
 }
 
-.book-img {
+.book-img-container {
+	width: 30%;
+	float: left;
 
 	img {
 		width: 100%;
-		box-shadow: 10px 20px 30px rgba($primary-color-4,0.1);
+		box-shadow: 1px 1px 2px rgba($primary-color-4,0.1), 1px 1px 2px rgba($primary-color-4,0.1);
 	}
 }
 
@@ -264,6 +247,12 @@ header {
 		font-weight: 700;
 		color: $primary-color-4;
 		margin-bottom: 20px;
+	}
+
+	h4 {
+		text-transform: uppercase;
+		letter-spacing: 0.09em;
+		color: $primary-color-5;
 	}
 
 	span {
@@ -303,9 +292,10 @@ header {
 }
 
 .video-card {
-	box-shadow: 10px 20px 30px rgba($primary-color-5,0.2);
 	text-align: center;
 	border-radius: 4px;
+	background-color: white;
+	box-shadow: 1px 1px 2px rgba($primary-color-4,0.1), 1px 1px 2px rgba($primary-color-4,0.1);
 
 	p {
 		text-align: left;
@@ -323,7 +313,6 @@ header {
 .video-container {
 	position: relative;
 	display: block;
-	margin-bottom: 14px;
 	overflow: hidden;
 	border-radius: 4px 4px 0 0;
 	&:after {
@@ -331,14 +320,14 @@ header {
 		position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba($primary-color-4,0.6);
+    background-color: rgba($primary-color-4,0.8);
     top:0;
     left:0;
     z-index: 1;
 	}
 
 	.background-image {
-		height: 100%;
+		width: 100%;
 	}
 
 	.play-icon {
@@ -347,5 +336,100 @@ header {
 		margin: -32px 0 0 -32px;
 		top: 50%;
 		left: 50%;
+	}
+}
+.practice-logo {
+	margin-top: 22px;
+	width: 40%;
+}
+
+.post-container {
+	background-color: white;
+	border-radius: 4px;
+	box-shadow: 1px 1px 2px rgba($primary-color-4,0.1), 1px 1px 2px rgba($primary-color-4,0.1);
+	margin: 22px;
+
+	p {
+		font-weight: 500;
+	}
+}
+
+.post-tag {
+	text-transform: uppercase;
+	font-size: 10px;
+	letter-spacing: 0.1em;
+	padding: 6px 10px;
+	background-color: #bbbbbb;
+	color: white;
+	border-radius: 4px;
+	font-weight: 400;
+	margin: 0 5px;
+}
+
+.people-follow-card {
+	display: inline-block;
+	background-color: white;
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	box-shadow: 1px 1px 2px rgba($primary-color-4,0.1), 1px 1px 2px rgba($primary-color-4,0.1);
+	border-radius: 4px;
+
+	.follow {
+		padding: 16px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		img {
+			margin-left: 16px;
+		}
+
+		span {
+			font-family: 'Raleway', 'sans-serif';
+			font-weight: 600;
+			font-size: 10px;
+			letter-spacing: 0.2em;
+			text-transform: uppercase;
+		}
+	}
+	&:after {
+		content:'';
+		position: absolute;
+		height: 2px;
+		background-color: $primary-color-4;
+		width: 0%;
+		left: 0;
+		bottom: -2px;
+		overflow: hidden;
+		transition: all 150ms ease-in;
+	}
+	&:hover .follow{
+		background-color: $primary-color-6 + 20;
+	}
+	&:hover {
+		&:after {
+			width: 100%;
+			left: 0;
+		}
+	}
+}
+
+.people-intro {
+	display: flex;
+	align-items: center;
+	padding: 16px;
+	padding-bottom: 4px;
+
+	p {
+		font-size: 16px;
+		margin-left: 16px;
+		font-weight: 600;
+		color: $primary-color-4;
+	}
+
+	img {
+		width: 20%;
+		border-radius: 50%;
 	}
 }
