@@ -634,7 +634,7 @@ a {
   background-color: rgba(23, 16, 33, 0.1);
   background-image: linear-gradient(to bottom, rgba(23, 16, 33, 0.4), rgba(67, 35, 87, 0.5)), radial-gradient(ellipse at 17% 47%, rgba(104, 78, 118, 0.4) -1%, rgba(41, 20, 57, 0.7) 64%);
   color: #B1A5B7;
-  box-shadow: inset 60px 60px 120px rgba(0, 0, 0, 0.2), inset -60px -60px 120px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 60px 160px 140px rgba(0, 0, 0, 0.2), inset -60px -60px 120px rgba(0, 0, 0, 0.2);
 }
 .hero-container .hero-logo {
   width: 26%;
