@@ -1,3 +1,5 @@
+require 'sass-globbing'
+
 
 project_type = :stand_alone
 http_path = "/"

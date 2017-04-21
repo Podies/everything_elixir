@@ -1,23 +1,23 @@
-@import "grid";
-@import "vars";
-@import "base";
+@import "*";
 
 //====================================================
 //Hero Section
 //====================================================
 
 .hero-container {
-	padding-bottom: 60px;
+	position: relative;
+	overflow: hidden;
 	margin-bottom: 22px;
 	text-align: center;
-	background-color: $primary-color-1;
+	background-color: rgba($primary-color-1,0.1);
 	background-image: linear-gradient(to bottom, rgba($primary-color-1,0.4), rgba($primary-color-3,0.5)), 
 										radial-gradient(ellipse at 17% 47%, rgba($primary-color-4,0.4) -1%, rgba($primary-color-2,0.7) 64%);
 	color: $primary-color-5;
 	box-shadow: inset 60px 60px 120px rgba(0,0,0,0.2), inset -60px -60px 120px rgba(0,0,0,0.2);
-	img {
-		width: 30%;
-		margin-bottom: 40px;
+	
+	.hero-logo {
+		width: 26%;
+		margin: 30px 0 40px 0;
 	}
 	
 	p {
@@ -32,7 +32,6 @@
 
 		span{
 			color: $accent-color;
-			text-transform: uppercase;
 		}
 	}
 
@@ -44,6 +43,23 @@
 			border-color: $accent-color;
 		}
 	}
+
+	.hero-back {
+		position: absolute;
+		z-index: -2;
+		top:0;
+		left:0;
+		bottom: 0;
+		right: 0;
+	}
+}
+
+.hero-wrapper {
+	padding: 60px;
+	box-shadow: 5px 0px 20px rgba(0,0,0,0.15), 
+						-5px 0 20px rgba(0,0,0,0.1), 
+						0 -40px 50px -10px rgba(0,0,0,0.1), 
+						inset 10px 10px 50px rgba($primary-color-4,0.1) ;
 }
 
 //====================================================
@@ -56,22 +72,33 @@
 	border-radius: 4px;
 	box-shadow: 1px 1px 2px rgba($primary-color-4,0.1), 1px 1px 2px rgba($primary-color-4,0.1);
 
-	img{
+	.hero-logo {
 		margin-bottom: 10px;
 	}
 
 	h2 {
 		color: $primary-color-1;
 		margin: 20px 0;
+		position: relative;
+		&:after {
+			content: '';
+			position: absolute;
+			width: 24%;
+			height: 4px;
+			background-color: $accent-color;
+			left: 50%;
+			bottom: -14px;
+			margin:0 0 0 -12%;
+		}
 	}
 
 	p {
-		margin-bottom: 40px;
+		margin: 40px 0;
 		color: $primary-color-5;
 	}
 	.nav-link {
 		font-size: 12px;
-		&:last-of-type {
+		&:nth-of-type(2) {
 			margin-left: 20px;
 		}
 	}
@@ -81,22 +108,21 @@
 // Footer
 //====================================================
 footer {
-	background-color: $primary-color-6;
 	font-size: 12px;
-	color: $primary-color-4;
+	color: $primary-color-5;
 	margin-top: 20px;
-	border-top: 1px solid $primary-color-6;
+	border-top: 1px solid $primary-color-6 + 20;
 
 	h4 {
 		text-transform: uppercase;
-		color: $primary-color-4;
+		color: $primary-color-5;
 		letter-spacing: 0.3mm;
 		margin-bottom: 14px;
 	}
 
 	a {
 		display: inline-block;
-		color: $primary-color-4;
+		color: $primary-color-5;
 		text-decoration: none;
 	}
 }
@@ -104,6 +130,7 @@ footer {
 .footer-contactus {
 	a {
 		margin-top: 6px;
+		color:$accent-color - 10;
 		font: {
 			family: 'Raleway';
 			weight: 600;
@@ -114,6 +141,11 @@ footer {
 			text-decoration: underline;
 		}
 	}
+
+	span {
+		text-transform: uppercase;
+		font-weight: 400;
+	}
 }
 
 .footer-learning, .footer-toolsref {
@@ -122,8 +154,8 @@ footer {
 		font-size: 11px;
 		margin-right: 20px;
 		&:hover {
-			color: $primary-color-1;
-			font-weight: 600;
+			color: $primary-color-4;
+			font-weight: 400;
 		}
 	}
 }
@@ -133,6 +165,7 @@ footer {
 //====================================================
 
 header {
+	box-shadow: 0 1px 1px rgba($primary-color-6,0.9);
 	img {
 		width: 40%;
 	}
@@ -144,13 +177,14 @@ header {
 		display: inline;
 
 		a {
+			text-transform: uppercase;
 			padding: 12px 20px;
 			position: relative;
 			color: $primary-color-4;
 			text-decoration: none;
 			font : {
 				family: 'Raleway', 'sans-serif';
-				size: 16px;
+				size: 13px;
 				weight: 600;
 			}
 			&:after {
@@ -172,6 +206,7 @@ header {
 				&:after {
 					width: 100%;
 				}
+				font-weight: 700;
 			}
 		}
 	}
@@ -218,6 +253,7 @@ header {
 }
 
 .sidebar {
+	box-shadow: 0px 1px 0px rgba($primary-color-6,0.8);
 
 	h4 {
 		font-size: 11px;
@@ -231,20 +267,24 @@ header {
 .sidebar-nav {
 	a {
 		color: $primary-color-4;
-		font-family: 'Quicksand', 'sans-serif';
+		font-family: 'Montserrat', 'sans-serif';
 		display: block;
 		padding: 14px 0;
 		position: relative;
 		font : {
-			size: 16px;
-			weight: 400;
+			size: 14px;
+			weight: 300;
 		}
 		&.active {
 			color: $primary-color-4;
-			font-weight: 700;
+			font-weight: 500;
+			&:hover {
+				color: $primary-color-4;
+			}
 		}
 		&:hover {
-			color: $primary-color-1;
+			color: $primary-color-3;
+			font-weight: 400;
 		}
 	}
 }
@@ -255,6 +295,14 @@ header {
 	background-color: white;
 	border-radius: 4px;
 	box-shadow: 1px 1px 2px rgba($primary-color-4,0.1), 1px 1px 2px rgba($primary-color-4,0.1);
+
+	.card-intro {
+		h3 {
+			&:after {
+				left: 12%;
+			}
+		}
+	}
 }
 
 .book-img-container {
@@ -269,17 +317,28 @@ header {
 
 .card-intro {
 	h3 {
-		font-size: 20px;
+		font-size: 24px;
 		letter-spacing: 0.06em;
 		font-weight: 700;
-		color: $primary-color-4;
-		margin-bottom: 20px;
+		color: $primary-color-2;
+		margin-bottom: 40px;
+		position: relative;
+		&:after {
+			content:'';
+			position: absolute;
+			width: 24%;
+			left: 50%;
+			height: 4px;
+			bottom: -16px;
+			margin:0 0 0 -12%;
+			background-color: $accent-color;
+		}
 	}
 
 	h4 {
 		text-transform: uppercase;
 		letter-spacing: 0.09em;
-		color: $primary-color-5;
+		color: $primary-color-4;
 	}
 
 	span {
@@ -299,6 +358,7 @@ header {
 
 	p {
 		margin-top: 20px;
+		color: $primary-color-5;
 	}
 
 	a {
@@ -393,6 +453,14 @@ header {
 
 	.button-container {
 		text-align: right;
+	}
+
+	.card-intro {
+		h3 {
+			&:after {
+				display: none;
+			}
+		}
 	}
 }
 
@@ -493,13 +561,13 @@ header {
 .people-intro {
 	display: flex;
 	align-items: center;
-	padding: 16px;
+	padding: 14px;
 	padding-bottom: 4px;
 
 	p {
-		font-size: 16px;
+		font-size: 14px;
 		margin-left: 16px;
-		font-weight: 600;
+		font-weight: 400;
 		color: $primary-color-4;
 	}
 

@@ -22,10 +22,11 @@ time, mark, audio, video {
   box-sizing: border-box; }
 
 body {
-  font-family: 'Quicksand', 'sans-serif';
-  font-size: 14px;
+  font-family: 'Montserrat', 'sans-serif';
+  font-size: 12px;
   line-height: 20px;
-  font-weight: 500;
+  font-weight: 300;
+  letter-spacing: 0.07em;
   background-color: #f8f5fb; }
 
 h1, h2, h3, h4, h5, h6 {
