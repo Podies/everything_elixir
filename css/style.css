@@ -756,7 +756,7 @@ header {
   box-shadow: 0 1px 1px rgba(213, 210, 216, 0.9);
 }
 header img {
-  width: 40%;
+  width: 26%;
 }
 
 .primary-nav {
@@ -860,7 +860,7 @@ header img {
 }
 .sidebar-nav a:hover {
   color: #432357;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .book-card {
@@ -921,6 +921,9 @@ header img {
 .card-intro p {
   margin-top: 20px;
   color: #B1A5B7;
+}
+.card-intro .post-heading {
+  margin-bottom: 8px;
 }
 .card-intro a {
   display: inline-block;

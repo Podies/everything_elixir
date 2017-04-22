@@ -167,7 +167,7 @@ footer {
 header {
 	box-shadow: 0 1px 1px rgba($primary-color-6,0.9);
 	img {
-		width: 40%;
+		width: 26%;
 	}
 }
 
@@ -284,7 +284,7 @@ header {
 		}
 		&:hover {
 			color: $primary-color-3;
-			font-weight: 400;
+			font-weight: 500;
 		}
 	}
 }
@@ -359,6 +359,10 @@ header {
 	p {
 		margin-top: 20px;
 		color: $primary-color-5;
+	}
+
+	.post-heading {
+		margin-bottom: 8px;
 	}
 
 	a {
@@ -463,6 +467,7 @@ header {
 		}
 	}
 }
+
 
 .post-tag {
 	text-transform: uppercase;
