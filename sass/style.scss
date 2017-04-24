@@ -320,6 +320,7 @@ header {
 .card-intro {
 	h3 {
 		font-size: 24px;
+		line-height: 36px;
 		letter-spacing: 0.06em;
 		font-weight: 700;
 		color: $primary-color-2;
@@ -338,9 +339,9 @@ header {
 	}
 
 	h4 {
-		text-transform: uppercase;
+		text-transform: capitalize;
 		letter-spacing: 0.09em;
-		color: $primary-color-4;
+		color: $primary-color-5;
 	}
 
 	span {
@@ -389,7 +390,6 @@ header {
 			transition: all 200ms ease-in;
 		}
 		&:hover {
-			background-color: $primary-color-6 + 30;
 			&:after {
 				width: 100%;
 			}

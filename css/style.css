@@ -886,6 +886,7 @@ header img {
 
 .card-intro h3 {
   font-size: 24px;
+  line-height: 36px;
   letter-spacing: 0.06em;
   font-weight: 700;
   color: #291439;
@@ -903,9 +904,9 @@ header img {
   background-color: #ffc107;
 }
 .card-intro h4 {
-  text-transform: uppercase;
+  text-transform: capitalize;
   letter-spacing: 0.09em;
-  color: #684E76;
+  color: #B1A5B7;
 }
 .card-intro span {
   text-transform: uppercase;
@@ -949,9 +950,6 @@ header img {
   bottom: -2px;
   transition: all 200ms ease-in;
 }
-.card-intro a:hover {
-  background-color: #f3f0f6;
-}
 .card-intro a:hover:after {
   width: 100%;
 }
@@ -961,9 +959,6 @@ header img {
   border-radius: 4px;
   background-color: white;
   box-shadow: 1px 1px 2px rgba(104, 78, 118, 0.1), 1px 1px 2px rgba(104, 78, 118, 0.1);
-}
-.video-card p {
-  text-align: left;
 }
 .video-card .card-intro {
   padding: 22px;
