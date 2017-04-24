@@ -60,6 +60,8 @@
 						-5px 0 20px rgba(0,0,0,0.1), 
 						0 -40px 50px -10px rgba(0,0,0,0.1), 
 						inset 10px 10px 50px rgba($primary-color-4,0.1) ;
+	margin-bottom: -22px;
+	border-radius: 4px;
 }
 
 //====================================================
@@ -111,7 +113,7 @@ footer {
 	font-size: 12px;
 	color: $primary-color-5;
 	margin-top: 20px;
-	border-top: 1px solid $primary-color-6 + 20;
+	border-top: 1px solid $primary-color-6 + 10;
 
 	h4 {
 		text-transform: uppercase;
