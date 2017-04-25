@@ -280,6 +280,16 @@ header {
 		&.active {
 			color: $primary-color-4;
 			font-weight: 500;
+			&:after {
+				content:'';
+				position: absolute;
+				width: 20%;
+				height: 2px;
+				background-color: $accent-color;
+				top: 50%;
+				right: 0;
+				margin-top: -1px;
+			}
 			&:hover {
 				color: $primary-color-4;
 			}
