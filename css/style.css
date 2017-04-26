@@ -1007,6 +1007,12 @@ header img {
 .video-card:hover span:after {
   width: 100%;
 }
+.video-card .video-container .background-img {
+  width: 100%;
+}
+.video-card .video-container .play-icon {
+  z-index: 2;
+}
 
 .video-container {
   position: relative;
@@ -1023,16 +1029,6 @@ header img {
   top: 0;
   left: 0;
   z-index: 1;
-}
-.video-container .background-image {
-  width: 100%;
-}
-.video-container .play-icon {
-  position: absolute;
-  z-index: 2;
-  margin: -32px 0 0 -32px;
-  top: 50%;
-  left: 50%;
 }
 
 .post-container {
