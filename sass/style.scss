@@ -283,11 +283,11 @@ header {
 			&:after {
 				content:'';
 				position: absolute;
-				width: 40%;
+				width: 50%;
 				height: 2px;
 				background-color: $accent-color;
 				top: 50%;
-				right: -50%;
+				right: -60%;
 				margin-top: -1px;
 			}
 			&:hover {
@@ -301,7 +301,24 @@ header {
 	}
 }
 
+.book-card {
+	display: flex;
+	background-color: white;
+	border-radius: 4px;
+	box-shadow: 1px 1px 2px rgba($primary-color-4,0.1), 1px 1px 2px rgba($primary-color-4,0.1);
+
+	.card-intro {
+		h3 {
+			&:after {
+				left: 12%;
+			}
+		}
+	}
+}
+
 .book-img-container {
+	float: left;
+	width: 100%;
 
 	img {
 		width: 100%;
@@ -311,6 +328,7 @@ header {
 
 .card-intro {
 	h3 {
+		text-transform: capitalize;
 		font-size: 24px;
 		line-height: 36px;
 		letter-spacing: 0.06em;
@@ -335,38 +353,11 @@ header {
 		text-transform: capitalize;
 		letter-spacing: 0.09em;
 		color: $primary-color-5;
-		font-weight: 300;
-	}
-
-	span {
-		text-transform: uppercase;
-		font-size: 10px;
-		letter-spacing: 0.1em;
-		padding: 6px 10px;
-		background-color: #219021;
-		color: white;
-		border-radius: 4px;
 		font-weight: 400;
 	}
 
-	.buy-book {
-		background-color: #ffc107;
-	}
-
-	p {
-		margin-top: 20px;
-		color: $primary-color-5;
-	}
-
-	.post-heading {
-		margin-bottom: 8px;
-	}
-
-	a {
-		width: 80%;
-		left: 50%;
-		margin: 0 0 0 -40%;
-		bottom: 22px;
+	span {
+		display: inline-block;
 		padding: 10px;
 	  position: absolute;
 		margin-top: 20px;
@@ -391,6 +382,19 @@ header {
 				width: 100%;
 			}
 		}
+	}
+
+	.buy-book {
+		background-color: #ffc107;
+	}
+
+	p {
+		margin-top: 20px;
+		color: $primary-color-5;
+	}
+
+	.post-heading {
+		margin-bottom: 8px;
 	}
 }
 
@@ -421,15 +425,22 @@ header {
 }
 
 .video-card {
+	height: 30em;
+	display: block;
 	text-align: center;
 	border-radius: 4px;
 	background-color: white;
 	box-shadow: 1px 1px 2px rgba($primary-color-4,0.1), 1px 1px 2px rgba($primary-color-4,0.1);
-	height: 30em;
 	position: relative;
 
 	.card-intro {
-		padding: 22px;
+		span {
+			width: 80%;
+			position: absolute;
+			bottom: 22px;
+			left: 50%;
+			transform: translate(-50%,0);
+		}
 	}
 
 	a {
@@ -437,14 +448,22 @@ header {
 	}
 
 	.logo-container {
-		height: 10em;
-		vertical-align: middle;
+		height: 11em;
 		position: relative;
-		.practice-logo {
+		img {
+			width: 40%;
 			position: absolute;
-			top: 50%;
 			left: 50%;
+			top: 50%;
 			transform: translate(-50%,-50%);
+		}
+	}
+
+	&:hover {
+		span{
+			&:after {
+				width: 100%;
+			}
 		}
 	}
 }
@@ -476,9 +495,6 @@ header {
 		top: 50%;
 		left: 50%;
 	}
-}
-.practice-logo {
-	width: 40%;
 }
 
 .post-container {
