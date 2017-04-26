@@ -270,7 +270,7 @@ header {
 	a {
 		color: $primary-color-4;
 		font-family: 'Montserrat', 'sans-serif';
-		display: block;
+		display: inline-block;
 		padding: 14px 0;
 		position: relative;
 		font : {
@@ -283,11 +283,11 @@ header {
 			&:after {
 				content:'';
 				position: absolute;
-				width: 20%;
+				width: 50%;
 				height: 2px;
 				background-color: $accent-color;
 				top: 50%;
-				right: 0;
+				right: -60%;
 				margin-top: -1px;
 			}
 			&:hover {
@@ -303,7 +303,7 @@ header {
 
 
 .book-card {
-	padding: 22px;
+	display: flex;
 	background-color: white;
 	border-radius: 4px;
 	box-shadow: 1px 1px 2px rgba($primary-color-4,0.1), 1px 1px 2px rgba($primary-color-4,0.1);
@@ -318,8 +318,8 @@ header {
 }
 
 .book-img-container {
-	width: 30%;
 	float: left;
+	width: 100%;
 
 	img {
 		width: 100%;
@@ -329,6 +329,7 @@ header {
 
 .card-intro {
 	h3 {
+		text-transform: capitalize;
 		font-size: 24px;
 		line-height: 36px;
 		letter-spacing: 0.06em;
@@ -352,33 +353,10 @@ header {
 		text-transform: capitalize;
 		letter-spacing: 0.09em;
 		color: $primary-color-5;
-	}
-
-	span {
-		text-transform: uppercase;
-		font-size: 10px;
-		letter-spacing: 0.1em;
-		padding: 6px 10px;
-		background-color: #219021;
-		color: white;
-		border-radius: 4px;
 		font-weight: 400;
 	}
 
-	.buy-book {
-		background-color: #ffc107;
-	}
-
-	p {
-		margin-top: 20px;
-		color: $primary-color-5;
-	}
-
-	.post-heading {
-		margin-bottom: 8px;
-	}
-
-	a {
+	span {
 		display: inline-block;
 		padding: 10px;
 	  position: relative;
@@ -405,20 +383,62 @@ header {
 			}
 		}
 	}
+
+	.buy-book {
+		background-color: #ffc107;
+	}
+
+	p {
+		margin-top: 20px;
+		color: $primary-color-5;
+	}
+
+	.post-heading {
+		margin-bottom: 8px;
+	}
 }
 
 .video-card {
+	height: 30em;
+	display: block;
 	text-align: center;
 	border-radius: 4px;
 	background-color: white;
 	box-shadow: 1px 1px 2px rgba($primary-color-4,0.1), 1px 1px 2px rgba($primary-color-4,0.1);
+	position: relative;
 
 	.card-intro {
-		padding: 22px;
+		span {
+			width: 80%;
+			position: absolute;
+			bottom: 22px;
+			left: 50%;
+			transform: translate(-50%,0);
+		}
 	}
 
 	a {
 		display: block;
+	}
+
+	.logo-container {
+		height: 11em;
+		position: relative;
+		img {
+			width: 40%;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%,-50%);
+		}
+	}
+
+	&:hover {
+		span{
+			&:after {
+				width: 100%;
+			}
+		}
 	}
 }
 
@@ -450,10 +470,7 @@ header {
 		left: 50%;
 	}
 }
-.practice-logo {
-	margin-top: 22px;
-	width: 40%;
-}
+
 
 .post-container {
 	padding: 22px;
