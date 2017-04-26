@@ -847,7 +847,7 @@ header img {
 .sidebar-nav a {
   color: #684E76;
   font-family: 'Montserrat', 'sans-serif';
-  display: block;
+  display: inline-block;
   padding: 14px 0;
   position: relative;
   font-size: 14px;
@@ -857,6 +857,16 @@ header img {
   color: #684E76;
   font-weight: 500;
 }
+.sidebar-nav a.active:after {
+  content: '';
+  position: absolute;
+  width: 40%;
+  height: 2px;
+  background-color: #ffc107;
+  top: 50%;
+  right: -50%;
+  margin-top: -1px;
+}
 .sidebar-nav a.active:hover {
   color: #684E76;
 }
@@ -865,20 +875,6 @@ header img {
   font-weight: 500;
 }
 
-.book-card {
-  padding: 22px;
-  background-color: white;
-  border-radius: 4px;
-  box-shadow: 1px 1px 2px rgba(104, 78, 118, 0.1), 1px 1px 2px rgba(104, 78, 118, 0.1);
-}
-.book-card .card-intro h3:after {
-  left: 12%;
-}
-
-.book-img-container {
-  width: 30%;
-  float: left;
-}
 .book-img-container img {
   width: 100%;
   box-shadow: 1px 1px 2px rgba(104, 78, 118, 0.1), 1px 1px 2px rgba(104, 78, 118, 0.1);
@@ -892,6 +888,7 @@ header img {
   color: #291439;
   margin-bottom: 40px;
   position: relative;
+  text-transform: capitalize;
 }
 .card-intro h3:after {
   content: '';
@@ -907,6 +904,7 @@ header img {
   text-transform: capitalize;
   letter-spacing: 0.09em;
   color: #B1A5B7;
+  font-weight: 300;
 }
 .card-intro span {
   text-transform: uppercase;
@@ -929,16 +927,19 @@ header img {
   margin-bottom: 8px;
 }
 .card-intro a {
-  display: inline-block;
+  width: 80%;
+  left: 50%;
+  margin: 0 0 0 -40%;
+  bottom: 22px;
   padding: 10px;
-  position: relative;
+  position: absolute;
   margin-top: 20px;
   font-size: 13px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.15em;
   font-family: 'Raleway', 'sans-serif';
-  color: #684E76;
+  color: #432357;
 }
 .card-intro a:after {
   position: absolute;
@@ -954,17 +955,51 @@ header img {
   width: 100%;
 }
 
+.book-card {
+  display: flex;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 1px 1px 2px rgba(104, 78, 118, 0.1), 1px 1px 2px rgba(104, 78, 118, 0.1);
+}
+.book-card .card-intro {
+  position: relative;
+}
+.book-card .card-intro h3:after {
+  left: 12%;
+}
+.book-card p {
+  margin-bottom: 6em;
+}
+.book-card a {
+  width: 20%;
+  left: 0;
+  margin: 0 0 0 22px;
+}
+
 .video-card {
   text-align: center;
   border-radius: 4px;
   background-color: white;
   box-shadow: 1px 1px 2px rgba(104, 78, 118, 0.1), 1px 1px 2px rgba(104, 78, 118, 0.1);
+  height: 30em;
+  position: relative;
 }
 .video-card .card-intro {
   padding: 22px;
 }
 .video-card a {
   display: block;
+}
+.video-card .logo-container {
+  height: 10em;
+  vertical-align: middle;
+  position: relative;
+}
+.video-card .logo-container .practice-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .video-container {
@@ -995,7 +1030,6 @@ header img {
 }
 
 .practice-logo {
-  margin-top: 22px;
   width: 40%;
 }
 
@@ -1048,9 +1082,6 @@ header img {
   bottom: -2px;
   transition: all 200ms ease-in;
 }
-.see-post:hover {
-  background-color: #f3f0f6;
-}
 .see-post:hover:after {
   width: 100%;
 }
@@ -1094,9 +1125,6 @@ header img {
   bottom: -2px;
   overflow: hidden;
   transition: all 150ms ease-in;
-}
-.people-follow-card:hover .follow {
-  background-color: #e9e6ec;
 }
 .people-follow-card:hover:after {
   width: 100%;
