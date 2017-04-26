@@ -847,7 +847,7 @@ header img {
 .sidebar-nav a {
   color: #684E76;
   font-family: 'Montserrat', 'sans-serif';
-  display: block;
+  display: inline-block;
   padding: 14px 0;
   position: relative;
   font-size: 14px;
@@ -856,6 +856,16 @@ header img {
 .sidebar-nav a.active {
   color: #684E76;
   font-weight: 500;
+}
+.sidebar-nav a.active:after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  background-color: #ffc107;
+  top: 50%;
+  right: -60%;
+  margin-top: -1px;
 }
 .sidebar-nav a.active:hover {
   color: #684E76;
@@ -866,7 +876,7 @@ header img {
 }
 
 .book-card {
-  padding: 22px;
+  display: flex;
   background-color: white;
   border-radius: 4px;
   box-shadow: 1px 1px 2px rgba(104, 78, 118, 0.1), 1px 1px 2px rgba(104, 78, 118, 0.1);
@@ -876,8 +886,8 @@ header img {
 }
 
 .book-img-container {
-  width: 30%;
   float: left;
+  width: 100%;
 }
 .book-img-container img {
   width: 100%;
@@ -885,6 +895,7 @@ header img {
 }
 
 .card-intro h3 {
+  text-transform: capitalize;
   font-size: 24px;
   line-height: 36px;
   letter-spacing: 0.06em;
@@ -907,28 +918,9 @@ header img {
   text-transform: capitalize;
   letter-spacing: 0.09em;
   color: #B1A5B7;
-}
-.card-intro span {
-  text-transform: uppercase;
-  font-size: 10px;
-  letter-spacing: 0.1em;
-  padding: 6px 10px;
-  background-color: #219021;
-  color: white;
-  border-radius: 4px;
   font-weight: 400;
 }
-.card-intro .buy-book {
-  background-color: #ffc107;
-}
-.card-intro p {
-  margin-top: 20px;
-  color: #B1A5B7;
-}
-.card-intro .post-heading {
-  margin-bottom: 8px;
-}
-.card-intro a {
+.card-intro span {
   display: inline-block;
   padding: 10px;
   position: relative;
@@ -940,7 +932,7 @@ header img {
   font-family: 'Raleway', 'sans-serif';
   color: #684E76;
 }
-.card-intro a:after {
+.card-intro span:after {
   position: absolute;
   content: '';
   background-color: #ffc107;
@@ -950,21 +942,52 @@ header img {
   bottom: -2px;
   transition: all 200ms ease-in;
 }
-.card-intro a:hover:after {
+.card-intro span:hover:after {
   width: 100%;
+}
+.card-intro .buy-book {
+  background-color: #ffc107;
+}
+.card-intro p {
+  margin-top: 20px;
+  color: #B1A5B7;
+}
+.card-intro .post-heading {
+  margin-bottom: 8px;
 }
 
 .video-card {
+  height: 30em;
+  display: block;
   text-align: center;
   border-radius: 4px;
   background-color: white;
   box-shadow: 1px 1px 2px rgba(104, 78, 118, 0.1), 1px 1px 2px rgba(104, 78, 118, 0.1);
+  position: relative;
 }
-.video-card .card-intro {
-  padding: 22px;
+.video-card .card-intro span {
+  width: 80%;
+  position: absolute;
+  bottom: 22px;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 .video-card a {
   display: block;
+}
+.video-card .logo-container {
+  height: 11em;
+  position: relative;
+}
+.video-card .logo-container img {
+  width: 40%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.video-card:hover span:after {
+  width: 100%;
 }
 
 .video-container {
@@ -992,11 +1015,6 @@ header img {
   margin: -32px 0 0 -32px;
   top: 50%;
   left: 50%;
-}
-
-.practice-logo {
-  margin-top: 22px;
-  width: 40%;
 }
 
 .post-container {
