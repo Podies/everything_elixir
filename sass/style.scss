@@ -460,6 +460,16 @@ header {
 			}
 		}
 	}
+
+	.video-container {
+		.background-img {
+			width: 100%;
+		}
+
+		.play-icon {
+			z-index: 2;
+		}
+	}
 }
 
 .video-container {
@@ -476,18 +486,6 @@ header {
     top:0;
     left:0;
     z-index: 1;
-	}
-
-	.background-image {
-		width: 100%;
-	}
-
-	.play-icon {
-		position: absolute;
-		z-index: 2;
-		margin: -32px 0 0 -32px;
-		top: 50%;
-		left: 50%;
 	}
 }
 
