@@ -884,9 +884,11 @@ header img {
 .book-card .card-intro h3:after {
   left: 12%;
 }
+.book-card .card-intro span {
+  position: relative;
+}
 
 .book-img-container {
-  float: left;
   width: 100%;
 }
 .book-img-container img {
@@ -946,9 +948,6 @@ header img {
 .card-intro span:hover:after {
   width: 100%;
 }
-.card-intro .buy-book {
-  background-color: #ffc107;
-}
 .card-intro p {
   margin-top: 20px;
   color: #B1A5B7;
@@ -968,9 +967,6 @@ header img {
 }
 .book-card .card-intro h3:after {
   left: 12%;
-}
-.book-card p {
-  margin-bottom: 6em;
 }
 .book-card a {
   width: 20%;

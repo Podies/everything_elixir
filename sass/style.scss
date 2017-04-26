@@ -313,11 +313,13 @@ header {
 				left: 12%;
 			}
 		}
+		span{
+			position: relative;
+		}
 	}
 }
 
 .book-img-container {
-	float: left;
 	width: 100%;
 
 	img {
@@ -384,10 +386,6 @@ header {
 		}
 	}
 
-	.buy-book {
-		background-color: #ffc107;
-	}
-
 	p {
 		margin-top: 20px;
 		color: $primary-color-5;
@@ -411,10 +409,6 @@ header {
 				left: 12%;
 			}
 		}
-	}
-
-	p {
-		margin-bottom: 6em;
 	}
 
 	a {
