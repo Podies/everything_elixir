@@ -710,6 +710,20 @@ a {
   margin-left: 20px;
 }
 
+.install {
+  color: #684E76;
+  background-color: white;
+  border-radius: 4px;
+  padding: 1.2em;
+}
+.install a {
+  color: #291439;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 0 0.4em;
+  position: relative;
+}
+
 footer {
   font-size: 12px;
   color: #B1A5B7;
