@@ -532,6 +532,14 @@ header {
 			}
 		}
 	}
+
+	&:hover {
+		.see-post {
+			&:after {
+				width: 100%;
+			}
+		}
+	}
 }
 
 
@@ -632,9 +640,9 @@ header {
 	padding-bottom: 4px;
 
 	p {
-		font-size: 14px;
+		font-size: 1em;
 		margin-left: 16px;
-		font-weight: 400;
+		font-weight: 500;
 		color: $primary-color-4;
 	}
 
@@ -642,4 +650,8 @@ header {
 		width: 20%;
 		border-radius: 50%;
 	}
+}
+
+.community-card {
+	height: 18em;
 }

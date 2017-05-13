@@ -1062,6 +1062,9 @@ header img {
 .post-container .card-intro h3:after {
   display: none;
 }
+.post-container:hover .see-post:after {
+  width: 100%;
+}
 
 .post-tag {
   text-transform: uppercase;
@@ -1153,12 +1156,16 @@ header img {
   padding-bottom: 4px;
 }
 .people-intro p {
-  font-size: 14px;
+  font-size: 1em;
   margin-left: 16px;
-  font-weight: 400;
+  font-weight: 500;
   color: #684E76;
 }
 .people-intro img {
   width: 20%;
   border-radius: 50%;
+}
+
+.community-card {
+  height: 18em;
 }
