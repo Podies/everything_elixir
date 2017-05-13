@@ -9,9 +9,9 @@
 	overflow: hidden;
 	margin-bottom: 22px;
 	text-align: center;
-	background-color: rgba($primary-color-1,0.1);
-	background-image: linear-gradient(to bottom, rgba($primary-color-1,0.4), rgba($primary-color-3,0.5)), 
-										radial-gradient(ellipse at 17% 47%, rgba($primary-color-4,0.4) -1%, rgba($primary-color-2,0.7) 64%);
+	background-color: rgba($primary-color-1,0.3);
+	background-image: linear-gradient(to bottom, rgba($primary-color-1,0.5), rgba($primary-color-3,0.6)), 
+										radial-gradient(ellipse at 17% 47%, rgba($primary-color-4,0.5) -1%, rgba($primary-color-2,0.8) 64%);
 	color: $primary-color-5;
 	box-shadow: inset 60px 160px 140px rgba(0,0,0,0.2), inset -60px -60px 120px rgba(0,0,0,0.2);
 	
@@ -106,10 +106,33 @@
 	}
 }
 
+.install {
+	text-align: center;
+	font-size: 1.2em;
+	color: $primary-color-4;
+	border-radius: 4px;
+	padding: 1.2em;
+
+	a {
+		color: $primary-color-2;
+		text-transform: uppercase;
+		font-weight: 700;
+		padding: 0 0.4em;
+		position: relative;
+	}
+
+	img {
+		position: relative;
+		top: 4px;
+		left: -10px;
+	}
+}
+
 //====================================================
 // Footer
 //====================================================
 footer {
+	background-color: #545454;
 	font-size: 12px;
 	color: $primary-color-5;
 	margin-top: 20px;
@@ -117,7 +140,7 @@ footer {
 
 	h4 {
 		text-transform: uppercase;
-		color: $primary-color-5;
+		color: $primary-color-6;
 		letter-spacing: 0.3mm;
 		margin-bottom: 14px;
 	}
@@ -156,7 +179,7 @@ footer {
 		font-size: 11px;
 		margin-right: 20px;
 		&:hover {
-			color: $primary-color-4;
+			color: white;
 			font-weight: 400;
 		}
 	}
@@ -301,9 +324,8 @@ header {
 	}
 }
 
-
 .book-card {
-	display: flex;
+	display: inline-block;
 	background-color: white;
 	border-radius: 4px;
 	box-shadow: 1px 1px 2px rgba($primary-color-4,0.1), 1px 1px 2px rgba($primary-color-4,0.1);
@@ -314,12 +336,21 @@ header {
 				left: 12%;
 			}
 		}
+		span{
+			position: relative;
+		}
+	}
+
+	&:hover {
+		span{
+			&:after {
+				width: 100%;
+			}
+		}
 	}
 }
 
 .book-img-container {
-	float: left;
-	width: 100%;
 
 	img {
 		width: 100%;
@@ -337,6 +368,7 @@ header {
 		color: $primary-color-2;
 		margin-bottom: 40px;
 		position: relative;
+		text-transform: capitalize;
 		&:after {
 			content:'';
 			position: absolute;
@@ -359,14 +391,14 @@ header {
 	span {
 		display: inline-block;
 		padding: 10px;
-	  position: relative;
+	  position: absolute;
 		margin-top: 20px;
 		font-size: 13px;
 		font-weight: 700;
 		text-transform: uppercase;
 		letter-spacing: 0.15em;
 		font-family: 'Raleway', 'sans-serif';
-		color: $primary-color-4;
+		color: $primary-color-3;
 		&:after {
 			position: absolute;
 			content:'';
@@ -384,10 +416,6 @@ header {
 		}
 	}
 
-	.buy-book {
-		background-color: #ffc107;
-	}
-
 	p {
 		margin-top: 20px;
 		color: $primary-color-5;
@@ -395,6 +423,11 @@ header {
 
 	.post-heading {
 		margin-bottom: 8px;
+	}
+
+	.for-docs-link {
+	display: block;
+	text-align: center;
 	}
 }
 
@@ -440,7 +473,28 @@ header {
 			}
 		}
 	}
+
+	.video-container {
+		.background-img {
+			width: 100%;
+		}
+
+		.play-icon {
+			z-index: 2;
+		}
+	}
 }
+
+.docs-list {
+	color: $primary-color-5;
+	p {
+		display: inline-block;
+		color: $primary-color-4;
+		font-size: 1.1em;
+		font-weight: 500;
+	}
+}
+
 
 .video-container {
 	position: relative;
@@ -457,20 +511,7 @@ header {
     left:0;
     z-index: 1;
 	}
-
-	.background-image {
-		width: 100%;
-	}
-
-	.play-icon {
-		position: absolute;
-		z-index: 2;
-		margin: -32px 0 0 -32px;
-		top: 50%;
-		left: 50%;
-	}
 }
-
 
 .post-container {
 	padding: 22px;
@@ -528,7 +569,6 @@ header {
 		transition: all 200ms ease-in;
 	}
 	&:hover {
-		background-color: $primary-color-6 + 30;
 		&:after {
 			width: 100%;
 		}
@@ -576,9 +616,6 @@ header {
 		bottom: -2px;
 		overflow: hidden;
 		transition: all 150ms ease-in;
-	}
-	&:hover .follow{
-		background-color: $primary-color-6 + 20;
 	}
 	&:hover {
 		&:after {
