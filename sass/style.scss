@@ -107,8 +107,9 @@
 }
 
 .install {
+	text-align: center;
+	font-size: 1.2em;
 	color: $primary-color-4;
-	background-color: white;
 	border-radius: 4px;
 	padding: 1.2em;
 
@@ -119,12 +120,19 @@
 		padding: 0 0.4em;
 		position: relative;
 	}
+
+	img {
+		position: relative;
+		top: 4px;
+		left: -10px;
+	}
 }
 
 //====================================================
 // Footer
 //====================================================
 footer {
+	background-color: #545454;
 	font-size: 12px;
 	color: $primary-color-5;
 	margin-top: 20px;
@@ -132,7 +140,7 @@ footer {
 
 	h4 {
 		text-transform: uppercase;
-		color: $primary-color-5;
+		color: $primary-color-6;
 		letter-spacing: 0.3mm;
 		margin-bottom: 14px;
 	}
@@ -171,7 +179,7 @@ footer {
 		font-size: 11px;
 		margin-right: 20px;
 		&:hover {
-			color: $primary-color-4;
+			color: white;
 			font-weight: 400;
 		}
 	}
@@ -332,6 +340,14 @@ header {
 			position: relative;
 		}
 	}
+
+	&:hover {
+		span{
+			&:after {
+				width: 100%;
+			}
+		}
+	}
 }
 
 .book-img-container {
@@ -408,6 +424,11 @@ header {
 	.post-heading {
 		margin-bottom: 8px;
 	}
+
+	.for-docs-link {
+	display: block;
+	text-align: center;
+	}
 }
 
 .video-card {
@@ -463,6 +484,17 @@ header {
 		}
 	}
 }
+
+.docs-list {
+	color: $primary-color-5;
+	p {
+		display: inline-block;
+		color: $primary-color-4;
+		font-size: 1.1em;
+		font-weight: 500;
+	}
+}
+
 
 .video-container {
 	position: relative;

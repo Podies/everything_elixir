@@ -27,7 +27,7 @@ body {
   font-family: 'Montserrat', 'sans-serif';
   font-size: 0.9em;
   line-height: 1.5em;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 0.07em;
   background-color: #eeebf1;
 }
@@ -711,8 +711,9 @@ a {
 }
 
 .install {
+  text-align: center;
+  font-size: 1.2em;
   color: #684E76;
-  background-color: white;
   border-radius: 4px;
   padding: 1.2em;
 }
@@ -723,8 +724,14 @@ a {
   padding: 0 0.4em;
   position: relative;
 }
+.install img {
+  position: relative;
+  top: 4px;
+  left: -10px;
+}
 
 footer {
+  background-color: #545454;
   font-size: 12px;
   color: #B1A5B7;
   margin-top: 20px;
@@ -732,7 +739,7 @@ footer {
 }
 footer h4 {
   text-transform: uppercase;
-  color: #B1A5B7;
+  color: #D5D2D8;
   letter-spacing: 0.3mm;
   margin-bottom: 14px;
 }
@@ -764,7 +771,7 @@ footer a {
   margin-right: 20px;
 }
 .footer-learning a:hover, .footer-toolsref a:hover {
-  color: #684E76;
+  color: white;
   font-weight: 400;
 }
 
@@ -901,6 +908,9 @@ header img {
 .book-card .card-intro span {
   position: relative;
 }
+.book-card:hover span:after {
+  width: 100%;
+}
 
 .book-img-container img {
   width: 100%;
@@ -966,6 +976,10 @@ header img {
 .card-intro .post-heading {
   margin-bottom: 8px;
 }
+.card-intro .for-docs-link {
+  display: block;
+  text-align: center;
+}
 
 .video-card {
   height: 30em;
@@ -1005,6 +1019,16 @@ header img {
 }
 .video-card .video-container .play-icon {
   z-index: 2;
+}
+
+.docs-list {
+  color: #B1A5B7;
+}
+.docs-list p {
+  display: inline-block;
+  color: #684E76;
+  font-size: 1.1em;
+  font-weight: 500;
 }
 
 .video-container {
