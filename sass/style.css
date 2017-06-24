@@ -437,13 +437,13 @@ a {
   text-decoration: none; }
 
 .cta {
-  color: #D5D2D8;
+  color: #d5d2d8;
   font-family: 'Raleway', 'sans-serif';
   font-size: 16px;
   padding: 12px 20px;
   font-weight: 700;
   background-color: transparent;
-  border: 2px solid #D5D2D8;
+  border: 2px solid #d5d2d8;
   border-radius: 4px;
   box-shadow: 5px 5px 10px rgba(23, 16, 33, 0.6); }
   .cta:hover {
@@ -493,7 +493,7 @@ a {
   text-align: center;
   background-color: rgba(23, 16, 33, 0.3);
   background-image: linear-gradient(to bottom, rgba(23, 16, 33, 0.5), rgba(67, 35, 87, 0.6)), radial-gradient(ellipse at 17% 47%, rgba(104, 78, 118, 0.5) -1%, rgba(41, 20, 57, 0.8) 64%);
-  color: #B1A5B7;
+  color: #b1a5b7;
   box-shadow: inset 60px 160px 140px rgba(0, 0, 0, 0.2), inset -60px -60px 120px rgba(0, 0, 0, 0.2); }
   .hero-container .hero-logo {
     width: 70%; }
@@ -501,7 +501,7 @@ a {
     text-align: left; }
   .hero-container h1 {
     text-transform: capitalize;
-    color: #D5D2D8;
+    color: #d5d2d8;
     line-height: 1.4em; }
     .hero-container h1 span {
       color: #ffc107; }
@@ -554,7 +554,7 @@ a {
       margin: 0 0 0 -12%; }
   .nav-card p {
     margin: 40px 0;
-    color: #B1A5B7; }
+    color: #b1a5b7; }
   .nav-card .nav-link {
     font-size: 12px; }
     .nav-card .nav-link:nth-of-type(2) {
@@ -563,7 +563,7 @@ a {
 .install {
   text-align: center;
   font-size: 1.2em;
-  color: #684E76;
+  color: #684e76;
   border-radius: 4px; }
   .install a {
     color: #291439;
@@ -579,17 +579,17 @@ a {
 footer {
   background-color: #545454;
   font-size: 12px;
-  color: #B1A5B7;
+  color: #b1a5b7;
   margin-top: 20px;
   border-top: 1px solid #dfdce2; }
   footer h4 {
     text-transform: uppercase;
-    color: #D5D2D8;
+    color: #d5d2d8;
     letter-spacing: 0.3mm;
     margin-bottom: 14px; }
   footer a {
     display: inline-block;
-    color: #B1A5B7;
+    color: #b1a5b7;
     text-decoration: none; }
 
 .footer-contactus a {
@@ -638,7 +638,7 @@ header {
       text-transform: uppercase;
       padding: 12px 5px;
       position: relative;
-      color: #684E76;
+      color: #684e76;
       text-decoration: none;
       font-family: 'Raleway', 'sans-serif';
       font-size: 13px;
@@ -666,7 +666,7 @@ header {
     .secondary-nav li a {
       padding: 12px 20px;
       text-transform: uppercase;
-      color: #B1A5B7;
+      color: #b1a5b7;
       letter-spacing: 0.18em;
       font-weight: 400; }
       .secondary-nav li a.active {
@@ -680,7 +680,7 @@ header {
     width: 100%;
     position: absolute;
     height: 1px;
-    background-color: #B1A5B7;
+    background-color: #b1a5b7;
     left: 0;
     bottom: -13px;
     z-index: -1; }
@@ -699,7 +699,7 @@ header {
     margin-bottom: 12px; }
 
 .sidebar-nav a {
-  color: #684E76;
+  color: #684e76;
   font-family: 'Montserrat', 'sans-serif';
   display: inline-block;
   padding: 14px 0;
@@ -707,7 +707,7 @@ header {
   font-size: 14px;
   font-weight: 300; }
   .sidebar-nav a.active {
-    color: #684E76;
+    color: #684e76;
     font-weight: 500; }
     .sidebar-nav a.active:after {
       content: '';
@@ -719,7 +719,7 @@ header {
       right: -60%;
       margin-top: -1px; }
     .sidebar-nav a.active:hover {
-      color: #684E76; }
+      color: #684e76; }
   .sidebar-nav a:hover {
     color: #432357;
     font-weight: 500; }
@@ -762,7 +762,7 @@ header {
 .card-intro h4 {
   text-transform: capitalize;
   letter-spacing: 0.09em;
-  color: #B1A5B7;
+  color: #b1a5b7;
   font-weight: 400; }
 .card-intro span {
   display: inline-block;
@@ -788,7 +788,7 @@ header {
     width: 100%; }
 .card-intro p {
   margin-top: 20px;
-  color: #B1A5B7; }
+  color: #b1a5b7; }
 .card-intro .post-heading {
   margin-bottom: 8px; }
 .card-intro .for-docs-link {
@@ -828,10 +828,10 @@ header {
     z-index: 2; }
 
 .docs-list {
-  color: #B1A5B7; }
+  color: #b1a5b7; }
   .docs-list p {
     display: inline-block;
-    color: #684E76;
+    color: #684e76;
     font-size: 1.1em;
     font-weight: 500; }
 
@@ -885,7 +885,7 @@ header {
   text-transform: uppercase;
   letter-spacing: 0.15em;
   font-family: 'Raleway', 'sans-serif';
-  color: #684E76; }
+  color: #684e76; }
   .see-post:after {
     position: absolute;
     content: '';
@@ -945,7 +945,7 @@ header {
     font-size: 1em;
     margin-left: 16px;
     font-weight: 500;
-    color: #684E76; }
+    color: #684e76; }
   .people-intro img {
     width: 20%;
     border-radius: 50%; }
@@ -989,7 +989,7 @@ header {
     align-items: center; }
 
   .sidebar label {
-    color: #684E76;
+    color: #684e76;
     display: inline-block;
     z-index: 12;
     position: fixed;
@@ -1012,5 +1012,3 @@ header {
 
   .primary-nav {
     margin-top: 1em; } }
-
-/*# sourceMappingURL=style.css.map */

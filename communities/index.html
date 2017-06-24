@@ -21,8 +21,8 @@
 <header>
 	<div class="grid">	
 		<div class="col-xs-12 main-nav">
-			<div class="col-xs-3">
-				<div class="col">
+			<div class="col-xs-3 col-md-3">
+				<div class="col nullPadding-top-bottom">
 					<a href="/"><img src="../img/EverythingElixirLogo2-02.png" alt="logo"></a>
 				</div>
 			</div>
@@ -37,17 +37,20 @@
 		</div>
 	</div>
 </header>
-<section>
+<section class="main-body">
 	<div class="grid">
 		<div class="col-xs-12">
-			<div class="col-xs-3 sidebar">
+			<div class="col-xs-3 sidebar col-sm-3 col-md-3 col-lg-12 col-xlg-12">
 				<div class="col">
-					<h4>Elixir tools & References</h4>
-					<ul class="sidebar-nav">
+					<input type="checkbox" id="toggle">
+					<label for="toggle" class="Hamburger">≡
+					</label>
+					<ul class="sidebar-nav hamburger-menu">
+						<li><h4>Elixir tools &amp References</h4></li>
 				    <li><a href="../books">Learning</a></li>
 				    <li><a href="../posts">Post & Talks</a></li>
 				    <li><a href="../frameworks">Frameworks</a></li>
-				    <li><a href="../people" >Follow</a></li>
+				    <li><a href="../people">Follow</a></li>
 				    <li><a href="../communities" class="active">Communities</a></li>
 				    <li><a href="../jobs">Jobs</a></li>
 				    <li><a href="../companies">Companies</a></li>
@@ -56,7 +59,7 @@
 					</ul>
 				</div>
 			</div>
-			<div class="col-xs-9 main">
+			<div class="col-xs-9 col-sm-9 col-md-9 col-lg-12 col-xlg-12  main">
 				<div class="col-xs-12">
 					<div class="col-xs-4 col-sm-4 col-md-6 col-lg-12 col-xlg-12">
 						<div class="col">
