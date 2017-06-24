@@ -39,13 +39,16 @@
 		</div>
 	</div>
 </header>
-<section>
+<section class= "main-body">
 	<div class="grid">
 		<div class="col-xs-12">
-			<div class="col-xs-3 sidebar col-sm-3 col-md-3 col-lg-3 col-xlg-12">
+			<div class="col-xs-3 sidebar col-sm-3 col-md-3 col-lg-12 col-xlg-12">
 				<div class="col">
-					<h4>Elixir tools &amp References</h4>
-					<ul class="sidebar-nav">
+					<input type="checkbox" id="toggle">
+					<label for="toggle" class="Hamburger">≡
+					</label>
+					<ul class="sidebar-nav hamburger-menu">
+						<li><h4>Elixir tools &amp References</h4></li>
 				    <li><a href="../books" class="active">Learning</a></li>
 				    <li><a href="../posts">Post & Talks</a></li>
 				    <li><a href="../frameworks">Frameworks</a></li>
@@ -58,7 +61,7 @@
 					</ul>
 				</div>
 			</div>
-			<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 col-xlg-12 main">
+			<div class="col-xs-9 col-sm-9 col-md-9 col-lg-12 col-xlg-12 main">
 				<div class="col-xs-12">
 					<div class="col">
 						<a class="book-card" href="https://www.manning.com/books/elixir-in-action" target="_blank">

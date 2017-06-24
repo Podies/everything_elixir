@@ -1,4 +1,6 @@
-@import "*";
+@import "base";
+@import "grid";
+@import "vars";
 
 //====================================================
 //Hero Section
@@ -16,19 +18,17 @@
 	box-shadow: inset 60px 160px 140px rgba(0,0,0,0.2), inset -60px -60px 120px rgba(0,0,0,0.2);
 	
 	.hero-logo {
-		width: 26%;
-		margin: 30px 0 40px 0;
+		width: 70%;
 	}
 	
 	p {
-		margin: 40px 0;
 		text-align: left;
 	}
 	
 	h1 {
-		margin-bottom: 24px;
 		text-transform: capitalize;
 		color: $primary-color-6;
+		line-height: 1.4em;
 
 		span{
 			color: $accent-color;
@@ -54,8 +54,16 @@
 	}
 }
 
+.btn-group {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
 .hero-wrapper {
-	padding: 60px;
+	padding: 1em;
+	padding-bottom: 4em;
 	box-shadow: 5px 0px 20px rgba(0,0,0,0.15), 
 						-5px 0 20px rgba(0,0,0,0.1), 
 						0 -40px 50px -10px rgba(0,0,0,0.1), 
@@ -111,7 +119,7 @@
 	font-size: 1.2em;
 	color: $primary-color-4;
 	border-radius: 4px;
-	padding: 1.2em;
+
 
 	a {
 		color: $primary-color-2;
@@ -190,20 +198,34 @@ footer {
 //====================================================
 
 header {
+	top: 0;
+	width: 100%;
+	z-index: 10;
+	background-color: $primary-color-6 + 25;
+	position: fixed;
 	box-shadow: 0 1px 1px rgba($primary-color-6,0.9);
 	img {
-		width: 26%;
+		width: 20%;
 	}
 }
 
+.main-body {
+	margin-top: 5em;
+}
+
+.main-nav {
+	position: relative;
+	z-index: 10;
+}
+
 .primary-nav {
-	text-align: right;
+	text-align: center;
 	li {
 		display: inline;
 
 		a {
 			text-transform: uppercase;
-			padding: 12px 20px;
+			padding: 12px 6px;
 			position: relative;
 			color: $primary-color-4;
 			text-decoration: none;
@@ -235,11 +257,6 @@ header {
 			}
 		}
 	}
-}
-
-.main-nav {
-	display: flex;
-	align-items: center;
 }
 
 .secondary-nav {
@@ -279,6 +296,14 @@ header {
 
 .sidebar {
 	box-shadow: 0px 1px 0px rgba($primary-color-6,0.8);
+
+	input {
+		display: none;
+	}
+
+	label {
+		display: none;
+	}
 
 	h4 {
 		font-size: 11px;
@@ -654,4 +679,65 @@ header {
 
 .community-card {
 	height: 18em;
+}
+
+@media all and (min-width: 520px) {
+	.hero-container {
+		.hero-logo {
+			width: 44%;
+		}
+	}
+}
+
+@media all and (min-width: 768px) {
+	.hero-container {
+		.hero-logo {
+			width: 30%;
+		}
+	}
+}
+
+@media all and (max-width: 769px) {
+	.hamburger-menu {
+		width: 100%;
+		position: fixed;
+		height: 100vh;
+		background-color: rgba($primary-color-6 + 25, 0.95);
+		z-index: 5;
+		left: -100%;
+		top: 11.5em;
+		padding-top: 2em;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.sidebar label {
+		color: $primary-color-4;
+		display: inline-block;
+		z-index: 12;
+		position: fixed;
+    left: 86%;
+    top: 5%;
+    font-size: 3em;
+	}
+
+	#toggle:checked ~ .hamburger-menu {
+		left: 0;
+	}
+
+}
+
+@media all and (min-width: 960px) {
+	.hero-container {
+		.hero-logo {
+			width: 20%;
+			margin: 1em 0;
+		}
+
+		.hero-wrapper {
+			padding: 2em;
+			padding-bottom: 4em;
+		}
+	}
 }
